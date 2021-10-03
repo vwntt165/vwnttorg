@@ -1,0 +1,350 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual World NFTs Home</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<style>
+    body{
+  margin:0px;
+  padding:0px;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+header{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  align-items: center;
+  transition: 0.6s;
+  
+}
+
+#btn-1{
+
+background-color:transparent;
+border: 0px transparent;
+margin-left: 650px;
+position:absolute;
+font-size:19px;
+margin-top:30px;
+padding:10px 20px;
+border-radius: 25px;
+color:white;
+
+
+
+
+}
+#btn-2{
+  background-color:transparent;
+  border: 0px transparent;
+  margin-left: 750px;
+  position:absolute;
+  font-size:19px;
+  margin-top:30px;
+  padding:10px 20px;
+  border-radius: 25px;
+  color:white;
+  
+  }
+  #btn-3{
+    background-color:transparent;
+    border: 0px transparent;
+    margin-left: 900px;
+    position:absolute;
+    font-size:19px;
+  margin-top:30px;
+  padding:10px 20px;
+  border-radius: 25px;
+  color:white;
+
+    }
+    #btn-4{
+      background-color:transparent;
+      border: 0px transparent;
+      margin-left: 1000px;
+      position:absolute;
+      font-size:19px;
+      padding:10px 20px;
+  margin-top:30px;
+  border-radius: 25px;
+  color:white;
+
+      
+    }
+    #btn-1:hover{
+      background-size: 300px 100px;
+      background-color: black;
+      border: 1px solid white;
+      background-color: white;
+      color:black;
+
+      
+    }
+    #btn-2:hover{
+      background-size: 300px 100px;
+      background-color: black;
+      border: 1px solid white;
+      background-color: white;
+      color:black;
+
+
+      
+    }
+    #btn-3:hover{
+      background-size: 300px 100px;
+      background-color: black;
+      border: 1px solid white;
+      background-color: white;
+      color:black;
+
+
+      
+    }
+    #btn-4:hover{
+      background-size: 300px 100px;
+      background-color: black;
+      border: 1px solid white;
+      background-color: white;
+      color:black;
+
+
+      
+    }
+    section{
+      height:100vh;
+      
+     
+      
+      
+    
+    }
+  
+    
+    .one{
+      background-image: url("resources/nft-img.jpg");
+      background-size: cover;
+      background-position: 550px 0px;
+
+      
+
+
+    }
+    .two{
+      
+   background-image: linear-gradient(45deg,#180a55 0%, #251667 99%, #211060   100%);
+
+    }
+    .three{
+    /*  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);*/
+   background-image: linear-gradient(45deg,#180a55 0%, #251667 99%, #211060   100%);
+
+    }
+    .four{
+   background-image: linear-gradient(45deg,#180a55 0%, #251667 99%, #211060   100%);
+
+    }
+    .rectangle{
+      /*width:1000px;
+         border-radius: 25px;
+      margin-left:-800px;
+      margin-top: 200px;
+      background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+      height:600px;*/
+      
+  
+   color: white;
+     
+      
+
+
+    
+    }
+    .fade-in-image {
+      animation: fadeIn 1s;
+    }
+    @keyframes fadeIn {
+  
+      from {transform: translateX(0); opacity: 0;}
+      to { transform: translateX(50px); opacity: 1;}
+    }
+  .p2{
+    font-size:30px;
+    color: white;
+    margin-left: 45px;
+    position:absolute;
+
+  }
+  .p3{
+    font-size:70px;
+    top: 2200;
+    right: 550px;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    COLOR: white;
+  }
+  
+.discord-img{
+position: absolute;
+top: 2500;
+right: 1300px;
+}
+#ind-discord-img{
+ border-radius:15px;
+
+}
+.tw-img{
+  position: absolute;
+  top: 2500;
+  right: 300px;
+
+}
+#ind-tw-img{
+  border-radius:15px;
+  width:270px;
+  height:120px;
+}
+#ind-gm-img{
+width: 280px;
+height:203px;
+
+}
+.gm-img{
+  position: absolute;
+  top: 3350;
+  right: 800px;
+
+}
+#mail-us{
+position: absolute;
+right: 850px;
+top: 3200;
+text-align:center;
+justify-content: center;
+font-size: 50px;
+color:white;
+
+}
+.in-img{
+border-radius:15px;
+position: absolute;
+top: 2500;
+right: 750px;
+width:400px;
+height: 113px;
+
+}
+
+ 
+
+#p5{
+  
+  color:white;
+  font-size: 45px;
+  position: absolute;
+  left: 50px;
+  font-weight: bold;
+}
+#roadmap{
+color:white;
+font-size: 50px;
+text-align:center;
+}
+
+</style>
+</head>
+<body>
+
+ <header>
+    <a href="#sec1"><p id="btn-1">HOME</p></a>
+    <a href="#sec2"><p id="btn-2">ROADMAP</p></a>
+    <a href="#sec3"><p id="btn-3">JOIN</p></a>
+    <a href="#sec4"><p id="btn-4">CONTACT</p></a>
+ </header>
+ <div class="container">
+     
+    <section id="sec1" class="one">
+
+        
+<div class="fade-in-image">
+      
+          <br><br><br>
+      <br><br><br><br><br><br><br><br><br><br><br><br>
+        <p5 id="p5">A COLLECTION MADE FROM THE FIRST <br>FAMOUS NFTs <br><br>BORED APE YACHT CLUB & CRYPTOPUNKS<br> ON POLYGON BLOCKCHAIN</p5>
+
+    </div>        
+</div>
+
+          
+    
+      
+
+    </section>
+
+    <section id="sec2" class="two">
+        <h1 id="roadmap"><b><br><br>ROADMAP<b></h1>
+        <p2 class="p2">
+            <br><br>
+           <br>
+            
+            5% FREE GIVEAWAY [ 500 NFTs ] <br><br>
+            
+            25% SOLD - GIVEAWAY 50 NFTs TO LUCKY HOLDERS ! <br><br>
+            
+            50% SOLD - DONATE $50000 TO CHARITY CHOOSEN BY THE COMMUNITY.<br><br>
+            
+            60% SOLD - GIVEAWAY 100 NFTs TO RANDOM LUCKY HOLDERS. <br><br>
+            
+            80% SOLD - FILL COMMUNITY WALLET WITH $100,000 ETH.<br><br>
+            
+            95% SOLD - GIVEAWAY 150 NFTs TO THE LUCKIEST HOLDERS & DEPOSIT $100000 TO WORLD WILDLIFE FUND<br><br>
+            
+            100% SOLD - BUY LAND ON SANDBOX & BUILD A TOWNSHIP.EVERY HOLDERS WILL HAVE FREE ACCESS <br>TO ALL PROPERTIES OWNED BY VIRTUAL WORLD !<br><br>
+            70% OF THE REVENUE FROM THE  PROPERTIES WILL BE GIVEN BACK TO THE HOLDERS. <br><br>
+
+            30% TO THE UPCOMING PROJECTS</p2>
+    </section>  
+
+    <section id="sec3"class="three">
+
+        <h1 class="p3"><b>JOIN OUR COMMUNITY<b></h1><br><br>
+    
+            <center> <a href="https://discord.gg/26nQzTV6Dh" >
+            <img id="ind-discord-img"class="discord-img" src="resources/btn-discord.png"></a></center>
+           
+            <a href="https://twitter.com/VirtualWorldNFT" > <img id="ind-tw-img"class="tw-img" src="resources/Twitter-follow-button.png"></a>
+       
+            <a href="https://instagram.com/_virtualworld_nft_" > <img id="ind-in-img"class="in-img" src="resources/ins.png"></a>
+
+    
+    </section>  
+    <section id="sec4" class="four">
+        <h1 id="mail-us">MAIL US</h1>
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCKHQdQnGQWPbFPffLZVSFkPjWKfRXRXpWVqHQVmZsKTCgZpMbXPDWWXLRQCrRzXBwHNbqcg" > <img id="ind-gm-img"class="gm-img" src="resources/gmail-icon.png"></a>
+   
+    </section>
+</div>
+
+
+   
+
+
+
+    
+<script>
+
+
+$(window).scroll(function(){
+    $(".rectangle").css("opacity",1 - $(window).scrollTop() / 250);
+})
+
+
+
+</script>
+</body>
+</html>
